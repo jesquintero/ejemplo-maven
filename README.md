@@ -36,4 +36,9 @@
 ### Testing Application
 * curl -X GET 'http://localhost:8080/rest/mscovid/test?msg=testing'
 
+### Jenkins on Ngrok
+* Esta herramienta nos permite publicar una aplicación a través de una DNS dinámico desde nuestro PC
+https://ngrok.com/
+
+
 ### Cambio para invocar el Github Webhook con push y Jenkinsfile para la tarea
