@@ -17,7 +17,7 @@ import com.devopsusach2020.model.Pais;
 import com.devopsusach2020.model.Mundial;
 import com.google.gson.Gson;
 
-
+/* Registrando controlador */
 @RestController
 @RequestMapping(path = "/rest/mscovid")
 public class RestData {
@@ -36,7 +36,7 @@ public class RestData {
 		return response;
 	}
 	
-	
+	/* Estados por pais */
 	@GetMapping(path = "/estadoPais", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody Pais getTotalPais(@RequestParam(name = "pais") String message){
 		RestTemplate restTemplate = new RestTemplate();
@@ -69,7 +69,7 @@ public class RestData {
 		return response;		
 	}
 	
-	
+	/* Estados del mundo */
 	@GetMapping(path = "/estadoMundial", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody Mundial getTotalMundial(){
 		
