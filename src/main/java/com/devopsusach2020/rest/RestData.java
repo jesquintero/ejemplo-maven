@@ -29,31 +29,6 @@ public class RestData {
 	public @ResponseBody Pais getData(@RequestParam(name = "msg") String message){
 		
 		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
-		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
 
 		
 		Pais response = new Pais();
@@ -68,23 +43,6 @@ public class RestData {
 	    ResponseEntity<String> call= restTemplate.getForEntity("https://api.covid19api.com/live/country/" + message ,String.class);
 	    
 	    LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
-		LOGGER.log(Level.INFO, "Consulta por pais");
 
 	    
 		Pais response = new Pais();
@@ -115,89 +73,6 @@ public class RestData {
 	@GetMapping(path = "/estadoMundial", produces = MediaType.APPLICATION_JSON_VALUE)
 	public @ResponseBody Mundial getTotalMundial(){
 		
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
-		LOGGER.log(Level.INFO, "Consulta mundial");
 		LOGGER.log(Level.INFO, "Consulta mundial");
 
 		
