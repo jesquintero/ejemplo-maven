@@ -29,6 +29,9 @@ public class RestData {
 	public @ResponseBody Pais getData(@RequestParam(name = "msg") String message){
 		
 		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
+		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
+		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
+		LOGGER.log(Level.INFO, "Proceso exitoso de prueba");
 		
 		Pais response = new Pais();
 		response.setMensaje("Mensaje Recibido: " + message);
@@ -42,6 +45,9 @@ public class RestData {
 	    ResponseEntity<String> call= restTemplate.getForEntity("https://api.covid19api.com/live/country/" + message ,String.class);
 	    
 	    LOGGER.log(Level.INFO, "Consulta por pais");
+		LOGGER.log(Level.INFO, "Consulta por pais");
+		LOGGER.log(Level.INFO, "Consulta por pais");
+		LOGGER.log(Level.INFO, "Consulta por pais");
 	    
 		Pais response = new Pais();
 		int confirmed = 0;
@@ -49,6 +55,7 @@ public class RestData {
 		int recovered = 0;
 		Gson gson = new Gson();
         Pais[] estados = gson.fromJson(call.getBody().toLowerCase(), Pais[].class);
+		Pais[] estados = gson.fromJson(call.getBody().toLowerCase(), Pais[].class);
 
         for(Pais estado : estados) {
         	response.setDate(estado.getDate());
@@ -72,6 +79,13 @@ public class RestData {
 	public @ResponseBody Mundial getTotalMundial(){
 		
 		LOGGER.log(Level.INFO, "Consulta mundial");
+		LOGGER.log(Level.INFO, "Consulta mundial");
+		LOGGER.log(Level.INFO, "Consulta mundial");
+		LOGGER.log(Level.INFO, "Consulta mundial");
+		LOGGER.log(Level.INFO, "Consulta mundial");
+		LOGGER.log(Level.INFO, "Consulta mundial");
+		LOGGER.log(Level.INFO, "Consulta mundial");
+		
 		
 		RestTemplate restTemplate = new RestTemplate();
 	    ResponseEntity<String> call= restTemplate.getForEntity("https://api.covid19api.com/world/total" ,String.class);
