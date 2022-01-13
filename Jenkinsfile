@@ -17,7 +17,7 @@ pipeline {
                     withSonarQubeEnv('LocalSonarServer'){
                         sh "${scannerHome}/bin/sonar-scanner
                         -Dsonar.projectKey=ejemplo-maven
-                        -Dsonar.sonar.sources=src
+                        -Dsonar.sources=src
                         -Dsonar.java.binaries=build"
                     }
                 }
